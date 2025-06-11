@@ -16,6 +16,7 @@ public class BeanComponent {
     public CommandLineRunner save(UserEntityDB userEntityDB) {
         return args -> {
             UserEntityDB userEntityDB1 = userRepository.save(userEntityDB);
+
             System.out.println("OK");
         };
     }

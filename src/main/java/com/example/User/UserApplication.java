@@ -27,19 +27,4 @@ public class UserApplication {
 	}
 
 
-
-	CommandLineRunner run(UserRepository userRepository) {
-		return args -> {
-			User user = new User("sdsf");
-
-
-
-			UserEntityDB userEntityDB = userMapper.toUserEntityDB(user);
-			userRepository.save(userEntityDB);
-		};
-
-
-	}
-
-
 }
